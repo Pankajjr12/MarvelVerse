@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.test.assignment">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Assignment">
+        <activity android:name=".teams.lanka.SriActivity"></activity>
+        <activity android:name=".teams.africa.SouthAfricaActivity" />
+        <activity android:name=".teams.west.WestIndiesActivity" />
+        <activity android:name=".teams.endland.EnglandActivity" />
+        <activity android:name=".teams.bangla.BangladeshActivity" />
+        <activity android:name=".teams.pakistan.PakistanActivity" />
+        <activity android:name=".teams.newzealand.NewzealandActivity" />
+        <activity android:name=".teams.india.IndiaActivity" />
+        <activity android:name=".teams.australia.AustraliaActivity" />
+        <activity android:name=".teams.afghan.AfghanistanActivity" />
+        <activity android:name=".adapter.Temp" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

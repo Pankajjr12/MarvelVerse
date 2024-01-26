@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:id="@+id/hLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="260dp"
+    android:background="@drawable/bottom_right_radius"
+    android:orientation="vertical"
+    android:layout_margin="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+  <ImageView
+      android:id="@+id/imgGal"
+      android:layout_width="160dp"
+      android:layout_height="160dp"
+      android:scaleType="centerCrop"
+      android:src="@drawable/wanda"
+      />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/maroon_light"/>
+
+  <TextView
+      android:id="@+id/ficName"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="SCARLETT WITCH"
+      android:layout_marginTop="10dp"
+      android:textSize="13sp"
+      android:textStyle="bold"
+      android:layout_marginHorizontal="2dp"
+      android:textColor="@color/white"/>
+
+  <TextView
+      android:id="@+id/realName"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="SCARLETT WITCH"
+      android:layout_marginTop="40dp"
+      android:textStyle="bold"
+      android:textSize="10sp"
+      android:layout_gravity="bottom"
+      android:layout_marginStart="2dp"
+      android:textColor="@color/light_grey"/>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#32C0C0C0</color>
+    <color name="trans">#00C0C0C0</color>
+    <color name="west"></color>
+    <color name="aus">#FFFF00</color>
+    <color name="sri">#031160</color>
+    <color name="eng">#57B3FB</color>
+    <color name="bang">#062B27</color>
+    <color name="ind">#07487C</color>
+    <color name="afghan">#c0c0c0</color>
+    <color name="africa">#458C48</color>
+    <color name="maroon">#800000</color>
+
+
+
+</resources>

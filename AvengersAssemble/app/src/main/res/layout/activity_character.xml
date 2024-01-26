@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="character"
+            type="com.pankaj.avengersassemble.views.fragments.characterDetail.CharacterVM" />
+    </data>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".views.fragments.characterDetail.CharacterActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/main.appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/main.collapsing"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/expanded_toolbar_height"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            >
+            <ImageView
+                android:id="@+id/backGrad"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha=".4"
+                android:onClick="@{()->character.more(`back`)}"
+                android:scaleType="fitXY"
+                android:fitsSystemWindows="true"
+                android:background="@drawable/asgard"/>
+
+            <FrameLayout
+                android:id="@+id/main.framelayout.title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/_5sdp"
+                >
+
+                <LinearLayout
+                    android:id="@+id/main.linearlayout.title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/spacing_small"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="bottom|center_horizontal"
+                        android:text="@{character.heroName}"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textsize_large"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/spacing_xxsmall"
+                        android:textSize="12sp"
+                        android:text="@{character.tagName}"
+                        android:textColor="@android:color/white"
+                        />
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/heroesbg"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imgHero"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/_70sdp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/hero_thor"/>
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/maroon_light"
+                android:layout_below="@id/imgHero"/>
+            <LinearLayout
+                android:id="@id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_toRightOf="@id/imgHero"
+                android:layout_alignTop="@id/imgHero"
+                android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:text="NAME"/>
+            <TextView
+                android:id="@+id/disName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="@{character.heroName}"/>
+
+            <TextView
+                android:id="@+id/tvPower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:textStyle="italic|bold"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:text="MOVIES"/>
+
+            <TextView
+                android:id="@+id/charPower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvPower"
+                android:textColor="@color/white"
+                android:layout_toRightOf="@id/imgHero"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:textSize="13sp"
+                android:layout_above="@id/view"
+                android:text="@{character.heroHeight}"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvAbout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_below="@id/imgHero"
+                android:text="About"
+                android:textSize="17sp"
+                android:textStyle="italic"
+                android:layout_margin="@dimen/_15sdp"
+                />
+                <TextView
+                    android:id="@+id/charStory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:layout_below="@id/tvAbout"
+                    android:text="@{character.aboutStory}"/>
+
+            <TextView
+                android:id="@+id/tvStrength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:layout_below="@id/charStory"
+                android:text="Strength"
+                android:textSize="17sp"
+                android:textStyle="italic"
+                android:layout_margin="@dimen/_15sdp"
+                />
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:rowCount="3"
+                android:layout_below="@id/tvStrength"
+                android:columnCount="2"
+                android:columnOrderPreserved="false"
+                android:alignmentMode="alignMargins">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:paddingVertical="@dimen/_10sdp"
+                android:gravity="center_horizontal"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4.5"
+                    android:gravity="center"
+                    android:textColor="#FFD700"
+                    android:textSize="40sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_marginVertical="@dimen/_5sdp"
+                    android:text="Durability"/>
+
+
+            </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="15dp"
+                android:layout_below="@id/tvStrength"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:background="@color/white"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:paddingVertical="@dimen/_10sdp"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5.0"
+                        android:gravity="center"
+                        android:textColor="#FFD700"
+                        android:textSize="40sp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:layout_marginVertical="@dimen/_5sdp"
+                        android:text="Strength"/>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="15dp"
+                    android:background="@color/white"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingVertical="@dimen/_10sdp"
+                        android:background="@color/white"
+                        android:gravity="center_horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="2.5"
+                            android:textColor="#FFD700"
+                            android:textSize="40sp"
+                            android:gravity="center"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:layout_marginVertical="@dimen/_5sdp"
+                            android:text="Intelligence"/>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    app:cardElevation="6dp"
+                    app:cardCornerRadius="15dp"
+                    android:background="@color/white"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@color/white"
+                        android:paddingVertical="@dimen/_10sdp"
+                        android:gravity="center_horizontal"
+                        >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="4.6"
+                            android:gravity="center"
+                            android:textColor="#FFD700"
+                            android:textSize="40sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:layout_marginVertical="@dimen/_5sdp"
+                            android:text="Energy"/>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main.toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/maroon_light"
+        app:layout_anchor="@id/main.collapsing"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:title="">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Space
+                android:layout_width="@dimen/image_final_width"
+                android:layout_height="@dimen/image_final_width"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/main.textview.title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@{character.heroName}"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textsize_large"
+                />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/image_width"
+        android:id="@+id/cirHero"
+        android:layout_height="@dimen/image_width"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:src="@drawable/thorodin"
+        app:finalHeight="@dimen/image_final_width"
+        app:civ_border_color="@color/white"
+        app:finalXPosition="@dimen/spacing_small"
+        app:finalYPosition="@dimen/spacing_small"
+        app:finalToolbarHeight="?attr/actionBarSize"
+        app:layout_behavior=".ImageAnimation"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

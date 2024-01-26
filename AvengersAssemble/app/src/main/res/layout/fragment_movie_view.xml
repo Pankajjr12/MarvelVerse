@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="marvel"
+            type="com.pankaj.avengersassemble.views.fragments.movieDetailFragment.MovieDetailVM" />
+    </data>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".views.fragments.movieDetailFragment.MovieDetailActivity">
+
+   <com.google.android.material.appbar.AppBarLayout
+       android:id="@+id/appBar"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/_300sdp"
+       android:theme="@style/ThemeOverlay.MaterialComponents.Dark"
+       android:fitsSystemWindows="true">
+
+       <com.google.android.material.appbar.CollapsingToolbarLayout
+           android:layout_width="match_parent"
+           android:id="@+id/collTollbar"
+           android:layout_height="match_parent"
+           android:fitsSystemWindows="true"
+           app:title="@{marvel.movieName}"
+           app:collapsedTitleGravity="start"
+           app:collapsedTitleTextAppearance="@color/maroon_light"
+           app:expandedTitleMarginBottom="@dimen/_10sdp"
+           app:expandedTitleMarginStart="@dimen/_10sdp"
+           app:contentScrim="?attr/colorPrimary"
+           app:expandedTitleTextAppearance="@color/transparent"
+           app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+    <ImageView
+        android:id="@+id/movieImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="@{()->marvel.clicks(`back`)}"
+        android:scaleType="centerCrop"
+        android:fitsSystemWindows="true"
+        app:layout_collapseMode="parallax"
+        android:src="@drawable/thor4"
+        android:layout_gravity="center|end"
+   />
+
+           <View
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/_50sdp"
+               android:layout_gravity="bottom"
+               android:padding="4dp"
+               android:background="@drawable/title_background"/>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            app:layout_collapseMode="pin"
+            app:contentInsetStart="0dp"
+            app:titleTextAppearance="@style/ToolBar.title"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light"/>
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+   </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:background="@color/white"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+        <TextView
+            android:id="@+id/tvStory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="About Story"
+            android:justificationMode="inter_word"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#c0c0c0"
+                android:textSize="14sp"
+                android:justificationMode="inter_word"
+                android:textStyle="italic"
+                android:text="@{marvel.movieName}"
+                android:layout_below="@id/tvStory"/>
+            <View
+                android:id="@+id/viewLine"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/maroon_light"
+                android:layout_below="@id/tvName"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/txtStory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{marvel.movStory}"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="45dp"
+                android:layout_below="@id/viewLine"
+                android:justificationMode="inter_word"/>
+
+            <TextView
+                android:id="@+id/txtDirector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Director :"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="45dp"
+                android:layout_below="@id/txtStory"
+                android:justificationMode="inter_word"/>
+
+            <TextView
+                android:id="@+id/director"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{marvel.dirName}"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="2dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="45dp"
+                android:layout_below="@id/txtStory"
+                android:layout_toRightOf="@id/txtDirector"
+                android:justificationMode="inter_word"/>
+            <TextView
+                android:id="@+id/txtBudget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Budget :"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/txtDirector"
+                android:justificationMode="inter_word"/>
+            <TextView
+                android:id="@+id/budget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{marvel.budPrice}"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/txtDirector"
+                android:layout_toRightOf="@id/txtBudget"
+                android:justificationMode="inter_word"/>
+        </RelativeLayout>
+        
+    </androidx.core.widget.NestedScrollView>
+    <ImageView
+        android:id="@+id/favBtn"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/ic_baseline_favorite_24"
+        app:layout_anchor="@id/appBar"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:layout_anchorGravity="bottom|center"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

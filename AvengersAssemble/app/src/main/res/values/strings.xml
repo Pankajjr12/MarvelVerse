@@ -1,0 +1,290 @@
+<resources>
+    <string name="app_name">AvengersAssemble</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Movies Directors-->
+    <string name="dir_ironOne">
+        Jon Favreau
+    </string>
+    <string name="dir_incHulk">
+        Louis Leterrier
+    </string>
+    <string name="dir_ironTwo">
+        Jon Favreau
+    </string>
+    <string name="dir_thorOne">
+        Kenneth Branagh
+    </string>
+    <string name="dir_captainOne">
+        Joe Johnston
+    </string>
+    <string name="dir_avgOne">
+        Joss Whedon
+    </string>
+    <string name="dir_ironThree">
+        Shane Black
+    </string>
+    <string name="dir_thorTwo">
+        Alan Taylor
+    </string>
+    <string name="dir_captainTwo">
+        Joe Russo and Anthony Russo
+    </string>
+    <string name="dir_galaxyOne">
+        James Gunn
+    </string>
+    <string name="dir_avgTwo">
+        Joss Whedon
+    </string>
+    <string name="dir_antOne">
+        Peyton Reed
+    </string>
+    <string name="dir_captainThree">
+        Joe Russo and Anthony Russo
+    </string>
+    <string name="dir_docOne">
+        Scott Derrickson
+    </string>
+    <string name="dir_galaxyTwo">
+        James Gunn
+    </string>
+    <string name="dir_spiderOne">
+        Jon Watts
+    </string>
+    <string name="dir_thorThree">
+        Taika Waititi
+    </string>
+    <string name="dir_pantherOne">
+        Ryan Coogler
+    </string>
+    <string name="dir_avgThree">
+        Joe Russo and Anthony Russo
+    </string>
+    <string name="dir_antTwo">
+        Peyton Reed
+    </string>
+    <string name="dir_marvelOne">
+        Joe Johnston
+    </string>
+    <string name="dir_avgFour">
+        Joe Russo and Anthony Russo
+    </string>
+    <string name="dir_spiderTwo">
+        Jon Watts
+    </string>
+    <string name="dir_widow">
+        Cate Shortland
+    </string>
+    <string name="dir_eternal">
+        Chloé Zhao
+    </string>
+    <string name="dir_docTwo">
+        Sam Raimi
+    </string>
+    <string name="dir_thorFour">
+        Taika Waititi
+    </string>
+
+
+    <!-- Movies Stories-->
+    <string name="story_ironOne">
+        A billionaire industrialist and genius inventor, Tony Stark (Robert Downey Jr.), is conducting weapons tests overseas, but terrorists kidnap him to force him to build a devastating weapon. Instead, he builds an armored suit and upends his captors. Returning to America, Stark refines the suit and uses it to combat crime and terrorism.
+    </string>
+    <string name="story_incHulk">
+        Scientist Bruce Banner (Edward Norton) desperately seeks a cure for the gamma radiation that contaminated his cells and turned him into The Hulk. Cut off from his true love Betty Ross (Liv Tyler) and forced to hide from his nemesis, Gen. Thunderbolt Ross (William Hurt), Banner soon comes face-to-face with a new threat: a supremely powerful enemy known as The Abomination (Tim Roth).
+    </string>
+    <string name="story_ironTwo">
+        With the world now aware that he is Iron Man, billionaire inventor Tony Stark (Robert Downey Jr.) faces pressure from all sides to share his technology with the military. He is reluctant to divulge the secrets of his armored suit, fearing the information will fall into the wrong hands. With Pepper Potts (Gwyneth Paltrow) and "Rhodey" Rhodes (Don Cheadle) by his side, Tony must forge new alliances and confront a powerful new enemy.
+    </string>
+    <!--    <string name="story_thorOne">-->
+    <!--        As the son of Odin (Anthony Hopkins), king of the Norse gods, Thor (Chris Hemsworth) will soon inherit the throne of Asgard from his aging father. However, on the day that he is to be crowned, Thor reacts with brutality when the gods\' enemies, the Frost Giants, enter the palace in violation of their treaty. As punishment, Odin banishes Thor to Earth. While Loki (Tom Hiddleston), Thor's brother, plots mischief in Asgard, Thor, now stripped of his powers, faces his greatest threat.-->
+    <!--    </string>-->
+    <string name="story_captainOne">
+        It is 1941 and the world is in the throes of war. Steve Rogers (Chris Evans) wants to do his part and join America\'s armed forces, but the military rejects him because of his small stature. Finally, Steve gets his chance when he is accepted into an experimental program that turns him into a supersoldier called Captain America. Joining forces with Bucky Barnes (Sebastian Stan) and Peggy Carter (Hayley Atwell), Captain America leads the fight against the Nazi-backed HYDRA organization.
+    </string>
+    <string name="story_avgOne">
+        When Thor\'s evil brother, Loki (Tom Hiddleston), gains access to the unlimited power of the energy cube called the Tesseract, Nick Fury (Samuel L. Jackson), director of S.H.I.E.L.D., initiates a superhero recruitment effort to defeat the unprecedented threat to Earth. Joining Fury\'s "dream team" are Iron Man (Robert Downey Jr.), Captain America (Chris Evans), the Hulk (Mark Ruffalo), Thor (Chris Hemsworth), the Black Widow (Scarlett Johansson) and Hawkeye (Jeremy Renner).
+    </string>
+    <string name="story_ironThree">
+        Plagued with worry and insomnia since saving New York from destruction, Tony Stark (Robert Downey Jr.), now, is more dependent on the suits that give him his Iron Man persona — so much so that every aspect of his life is affected, including his relationship with Pepper (Gwyneth Paltrow). After a malevolent enemy known as the Mandarin (Ben Kingsley) reduces his personal world to rubble, Tony must rely solely on instinct and ingenuity to avenge his losses and protect the people he loves.
+    </string>
+    <string name="story_thorTwo">
+        When the Dark Elves attempt to plunge the universe into darkness, Thor must embark on a perilous and personal journey that will reunite him with doctor Jane Foster. Thousands of years ago, a race of beings known as Dark Elves tried to send the universe into darkness by using a weapon known as the Aether.
+    </string>
+    <string name="story_captainTwo">
+        After the cataclysmic events in New York with his fellow Avengers, Steve Rogers, aka Captain America (Chris Evans), lives in the nation\'s capital as he tries to adjust to modern times. An attack on a S.H.I.E.L.D. colleague throws Rogers into a web of intrigue that places the whole world at risk. Joining forces with the Black Widow (Scarlett Johansson) and a new ally, the Falcon, Rogers struggles to expose an ever-widening conspiracy, but he and his team soon come up against an unexpected enemy.
+    </string>
+    <string name="story_galaxyOne">
+        Brash space adventurer Peter Quill (Chris Pratt) finds himself the quarry of relentless bounty hunters after he steals an orb coveted by Ronan, a powerful villain. To evade Ronan, Quill is forced into an uneasy truce with four disparate misfits: gun-toting Rocket Raccoon, treelike-humanoid Groot, enigmatic Gamora, and vengeance-driven Drax the Destroyer. But when he discovers the orb\'s true power and the cosmic threat it poses, Quill must rally his ragtag group to save the universe.
+    </string>
+    <string name="story_avgTwo">
+        When Tony Stark (Robert Downey Jr.) jump-starts a dormant peacekeeping program, things go terribly awry, forcing him, Thor (Chris Hemsworth), the Incredible Hulk (Mark Ruffalo) and the rest of the Avengers to reassemble. As the fate of Earth hangs in the balance, the team is put to the ultimate test as they battle Ultron, a technological terror hell-bent on human extinction. Along the way, they encounter two mysterious and powerful newcomers, Pietro and Wanda Maximoff.
+    </string>
+    <string name="story_antOne">
+        Forced out of his own company by former protégé Darren Cross, Dr. Hank Pym (Michael Douglas) recruits the talents of Scott Lang (Paul Rudd), a master thief just released from prison. Lang becomes Ant-Man, trained by Pym and armed with a suit that allows him to shrink in size, possess superhuman strength and control an army of ants. The miniature hero must use his new skills to prevent Cross, also known as Yellowjacket, from perfecting the same technology and using it as a weapon for evil.
+    </string>
+    <string name="story_captainThree">
+        Political pressure mounts to install a system of accountability when the actions of the Avengers lead to collateral damage. The new status quo deeply divides members of the team. Captain America (Chris Evans) believes superheroes should remain free to defend humanity without government interference. Iron Man (Robert Downey Jr.) sharply disagrees and supports oversight. As the debate escalates into an all-out feud, Black Widow (Scarlett Johansson) and Hawkeye (Jeremy Renner) must pick a side
+    </string>
+    <string name="story_docOne">
+        After a horrible car accident, brilliant neurosurgeon Stephen Strange must find a way and a cure to healing his hands. His quest brings him to Kamar-Taj in Nepal where he studies under the Ancient One, who teaches him the ways of magic and alternate realities
+    </string>
+    <string name="story_galaxyTwo">
+        Peter Quill and his fellow Guardians are hired by a powerful alien race, the Sovereign, to protect their precious batteries from invaders. When it is discovered that Rocket has stolen the items they were sent to guard, the Sovereign dispatch their armada to search for vengeance. As the Guardians try to escape, the mystery of Peter\'s parentage is revealed.
+    </string>
+    <string name="story_spiderOne">
+        Thrilled by his experience with the Avengers, young Peter Parker returns home to live with his Aunt May. Under the watchful eye of mentor Tony Stark, Parker starts to embrace his newfound identity as Spider-Man. He also tries to return to his normal daily routine — distracted by thoughts of proving himself to be more than just a friendly neighborhood superhero. Peter must soon put his powers to the test when the evil Vulture emerges to threaten everything that he holds dear.
+    </string>
+    <string name="story_thorThree">
+        Imprisoned on the other side of the universe, the mighty Thor finds himself in a deadly gladiatorial contest that pits him against the Hulk, his former ally and fellow Avenger. Thor\'s quest for survival leads him in a race against time to prevent the all-powerful Hela from destroying his home world and the Asgardian civilization.
+    </string>
+
+    <string name="story_panther">
+        After the death of his father, T\'Challa returns home to the African nation of Wakanda to take his rightful place as king. When a powerful enemy suddenly reappears,Black Panther — gets tested when he\'s drawn into a conflict that puts the fate of Wakanda and the entire world at risk. Faced with treachery and danger, the young king must rally his allies and release the full power of Black Panther to defeat his foes and secure the safety of his people.
+    </string>
+    <string name="story_avgThree">
+        Iron Man, Thor, the Hulk and the rest of the Avengers unite to battle their most powerful enemy yet — the evil Thanos. On a mission to collect all six Infinity Stones, Thanos plans to use the artifacts to inflict his twisted will on reality. The fate of the planet and existence itself has never been more uncertain as everything the Avengers have fought for has led up to this moment.
+    </string>
+    <string name="story_antTwo">
+        As he struggles to rebalance his home life with his responsibilities as Ant-Man, he\'s confronted by Hope van Dyne and Dr. Hank Pym with an urgent new mission. Scott must once again put on the suit and learn to fight alongside The Wasp as the team works together to uncover secrets from their past.
+    </string>
+    <string name="story_marvel">
+        Captain Marvel is an extraterrestrial Kree warrior who finds herself caught in the middle of an intergalactic battle between her people and the Skrulls. Living on Earth in 1995, she keeps having recurring memories of another life as U.S. Air Force pilot Carol Danvers. With help from Nick Fury, Captain Marvel tries to uncover the secrets of her past while harnessing her special superpowers to end the war with the evil Skrulls.
+    </string>
+    <string name="story_avgFour">
+        Adrift in space with no food or water, Tony Stark sends a message to Pepper Potts as his oxygen supply starts to dwindle. Meanwhile, the remaining Avengers — Thor, Black Widow, Captain America and Bruce Banner — must figure out a way to bring back their vanquished allies for an epic showdown with Thanos — the evil demigod who decimated the planet and the universe.
+    </string>
+    <string name="story_spiderTwo">
+        Peter Parker\'s relaxing European vacation takes an unexpected turn when Nick Fury shows up in his hotel room to recruit him for a mission. The world is in danger as four massive elemental creatures — each representing Earth, air, water and fire — emerge from a hole torn in the universe. Parker soon finds himself donning the Spider-Man suit to help Fury and fellow superhero Mysterio stop the evil entities from wreaking havoc across the continent.
+    </string>
+    <string name="story_widow">
+        Orphaned as a child, she was rescued during an attack on Stalingrad by a man named Ivan Petrovitch Bezukhov, who looked after and trained the girl. … Following World War II, Natasha progressed into the Black Widow Program, where young girls like her were conditioned to become sleeper agents.
+    </string>
+    <string name="story_eternal">
+        The Eternals, a race of immortal beings with superhuman powers who have secretly lived on Earth for thousands of years, reunite to battle the evil Deviants.
+    </string>
+    <string name="story_docTwo">
+        After the events of Avengers: Endgame, Dr Stephen Strange continues his research on the Time Stone. But an old friend-turned-enemy puts an end to his plans and causes Strange to unleash unspeakable evil.
+    </string>
+    <string name="story_thorFour">
+        Love and Thunder will be inspired by the Thor comics of star Marvel writer Jason Aaron. In that comic, Odinson loses the ability to lift Mjolnir, and Jane Foster takes on the mantle of Thor, while simultaneously battling cancer in her human hours
+    </string>
+
+
+    <string name="wanda_about">
+        Wanda Maximoff aimed her anger and grief over loss of her parents at Tony Stark, which drove her to HYDRA—where she gained powers—which drove her further to Ultron, where she gained perspective. Seeing the error of her ways, Wanda switched sides.
+    </string>
+    <string name="nat_about">
+        A deadly assassin is closing in on Natasha Romanoff. Now Natasha must reunite with an unlikely group of spies from her past in order to survive and stop a lethal force from being unleashed on the world.
+    </string>
+    <string name="thor_about">
+        Thor Odinson wields the power of the ancient Asgardians to fight evil throughout the Nine Realms and beyond.
+    </string>
+    <string name="iron_about">
+        Inventor Tony Stark applies his genius for high-tech solutions to problems as Iron Man, the armored Avenger.
+    </string>
+    <string name="marvel_about">
+    </string>
+    <string name="america_about">
+        America’s World War II Super-Soldier continues his fight in the present as an Avenger and untiring sentinel of liberty.
+    </string>
+    <string name="hulk_about">
+        Exposed to heavy doses of gamma radiation, scientist Bruce Banner transforms into the mean, green rage machine called the Hulk.
+    </string>
+    <string name="panther_about">
+        As the king of the African nation of Wakanda, T’Challa protects his people as the latest in a legacy line of Black Panther warriors.
+    </string>
+    <string name="hawk_about">
+        An expert marksman and fighter, Clint Barton puts his talents to good use by working for S.H.I.E.L.D. as a special agent. The archer known as Hawkeye also boasts a strong moral compass that at times leads him astray from his direct orders.
+    </string>
+    <string name="winter_about">
+        James Buchanan “Bucky” Barnes enlists to fight in World War II, but eventually literally falls in battle. Unfortunately, the evil Arnim Zola recovers him and erases his memory, turning him into a highly-trained assassin called the Winter Soldier.
+    </string>
+    <string name="vision_about">
+        A fully unique being, Vision came about thanks to a combination of Wakandan Vibranium, Asgardian lightning, an Infinity Stone, and more.
+    </string>
+    <string name="spider_about">
+        With amazing spider-like abilities, teenage science whiz Peter Parker fights crime and dreams of becoming an Avenger as Spider-Man.
+    </string>
+    <string name="war_about">
+        Air Force Lieutenant Colonel James “Rhodey” Rhodes exudes loyalty and courage, whether flying a plane or piloting the War Machine armor.
+    </string>
+    <string name="doctor_about">
+        Once a highly successful, yet notably egotistical, surgeon, Doctor Stephen Strange endured a terrible accident that led him to evolve in ways he could have never foreseen.
+    </string>
+    <string name="loki_about">
+        Loki, Prince of Asgard, Odinson, rightful heir of Jotunheim, and God of Mischief, is burdened with glorious purpose. His desire to be a king drives him to sow chaos in Asgard. In his lust for power, he extends his reach to Earth.
+    </string>
+    <string name="thanos_about">
+        Using the power of the Infinity Stones, Thanos believes he can ultimately save the universe by wiping out half of its population.
+    </string>
+    <string name="kang_about">
+        Iron Lad. Rama-Tut. Scarlet Centurion. Immortus. The Master of Time. He has had many names across the timestream, but only one dominates them all: Kang the Conqueror.
+    </string>
+    <string name="falcon_about">
+        As the superhero Falcon, Wilson uses mechanical wings to fly, and has limited telepathic and empathic control over birds. Following Steve Rogers\'s retirement, Wilson becomes the newest Captain America in All-New Captain America.
+    </string>
+    <string name="wong_about">
+        Wong is a Master of the Mystic Arts who protects the New York Sanctum alongside Doctor Strange. Until recently, he was the librarian at Kamar-Taj in Kathmandu, Nepal, where he took up the post after Kaecilius killed the previous keeper of the books
+    </string>
+    <string name="star_about">
+        Would-be thief Peter Quill journeys through space as Star-Lord, the leader of the Guardians of the Galaxy.
+    </string>
+    <string name="drax_about">
+        Drax is a brutish, battle-tested warrior. A former intergalactic criminal, Drax has no interest in money, only avenging his slain family. Reluctant at first, the hero with an unquenchable murderous rage joins the Guardians of the Galaxy.
+    </string>
+    <string name="gamora_about">
+        Gamora is a trained warrior assassin, whose life under her adoptive father Thanos’ torturous wrath leads her to turn against him. Realizing the universe is threatened by powerful Infinity Stones, she takes up the mantle of Guardian of the Galaxy.
+    </string>
+    <string name="mantis_about">
+        Isolated from other lifeforms from an early age by Ego, Mantis does not understand the intricacies of social engagement; but she is learning upon recruitment into the Guardians of the Galaxy.
+    </string>
+    <string name="rocket_about">
+        Ain’t no thing like Rocket, ‘cept Rocket. He lives for the simple things, including collecting valuable bounty alongside his friend and partner, Groot. Quick to train a weapon on anyone who offends him, he’s far more formidable than he appears.
+    </string>
+    <string name="groot_about">
+        This tree-like being branched out of his comfort zone to help the Guardians of the Galaxy keep the people of the universe safe.
+    </string>
+    <string name="neb_about">
+        The fierce warrior Nebula is the adopted daughter of Thanos and the “sister” of Gamora. As the Mad Titan raised his “daughters,” he trained the two in combat, often forcing them to face off against each other.
+    </string>
+    <string name="shuri_about">
+        Possessing one of the most brilliant minds in the world, the Black Panther’s sister, Princess Shuri, is also the chief science officer for Wakanda, a position she cherishes much more than her royal status
+    </string>
+    <string name="okaye_about">
+        Okoye serves the Black Panther as a personal bodyguard and the nation of Wakanda as a torchbearer of tradition and virtue. Okoye is as deadly as she is wise, and stands as one of T’Challa’s most trusted allies and companions.
+    </string>
+    <string name="odin_about">
+        King of Asgard and protector of the Nine Realms, Odin the All-Father once led with only conquest in mind. Eventually, he recognized the benefits of lasting peace and changed his ways.
+    </string>
+    <string name="miss_about">
+        Hey y’all! Miss Minutes keeps the Time Variance Authority ticking like clockwork, in more ways than one.
+    </string>
+    <string name="val_about">
+        Gifted the power of the legendary Asgardian Brunnhilde, Parrington assumed the mantle and the cosmic responsibilities of the Valkyrie
+    </string>
+    <string name="antman_about">
+        Ex-con Scott Lang uses high-tech equipment to shrink down to insect-size and fight injustice as Ant-Man.
+    </string>
+    <string name="wasp_about">
+        Janet van Dyne flies high and stings hard as the Wasp, the size-changing founding Avenger with an impeccable fashion sense.
+    </string>
+    <string name="ham_about">
+        Heimdall is the guardian of the Bifrost Bridge, and as its gatekeeper, he controls access and travel between Asgard and the other nine realms. With his all-seeing eyes, Heimdall protects Asgard and all of its citizens.
+    </string>
+    <string name="happy_about">
+        He is usually depicted as a supporting character in stories featuring Iron Man, for whom he works as a chauffeur, bodyguard, and personal assistant.
+    </string>
+    <string name="yelena_about">
+        She is depicted as a spy and was the second modern-era character to use the Black Widow name. She first appeared in Inhumans.
+    </string>
+    <string name="nick_about">
+        In the years following the Cold War, Nick Fury wrestles with his sense of purpose within S.H.I.E.L.D. When Nick crosses paths with Captain Marvel, they become Earth\'s only hope of stopping a Skrull invasion.
+    </string>
+    <string name="ego_about">
+        Ego, a powerful Celestial being and intergalactic explorer, traveled the cosmos in search of reuniting with his long-lost biological son, Peter Quill, and embarking on his most important mission together as father and son.
+    </string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+</resources>

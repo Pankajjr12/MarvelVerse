@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="marvel"
+            type="com.pankaj.avengersassemble.views.fragments.galleryFragment.GalleryVM" />
+    </data>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".views.fragments.galleryFragment.GalleryFragment">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/cTopLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="15dp"
+    android:background="@drawable/bottom_round_toolbar"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="@{()->marvel.clicks(`back`)}"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:layout_marginStart="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marvel Gallery"
+        app:layout_constraintTop_toTopOf="@id/ivBack"
+        app:layout_constraintBottom_toBottomOf="@id/ivBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:lineSpacingExtra="2dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <SearchView
+        android:id="@+id/edtSearch"
+        app:queryHint="Enter Avengers Name"
+        android:layout_width="match_parent"
+        android:iconifiedByDefault="false"
+        style="@style/search"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_6sdp"
+        android:searchIcon="@drawable/serach"
+        android:background="@drawable/search_bg"
+        app:layout_constraintTop_toBottomOf="@id/cTopLayout"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerGallery"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        app:spanCount="2"
+        android:layout_marginHorizontal="8dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/edtSearch"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

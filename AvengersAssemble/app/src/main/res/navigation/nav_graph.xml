@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashFragment">
+
+    <fragment
+        android:id="@+id/dashFragment"
+        android:name="com.pankaj.avengersassemble.views.fragments.dashFragment.DashFragment"
+        android:label="fragment_dash"
+        tools:layout="@layout/fragment_dash" >
+        <action
+            android:id="@+id/action_dashFragment_to_gallFragment"
+            app:destination="@id/gallFragment" />
+        <action
+            android:id="@+id/action_dashFragment_to_movieFragment"
+            app:destination="@id/movieFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/gallFragment"
+        android:name="com.pankaj.avengersassemble.views.fragments.galleryFragment.GalleryFragment"
+        android:label="fragment_dash"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/movieFragment"
+        android:name="com.pankaj.avengersassemble.views.fragments.movieFragment.MovieListFragment"
+        android:label="fragment_dash"
+        tools:layout="@layout/fragment_movie_list">
+
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.pankaj.avengersassemble.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+
+</navigation>

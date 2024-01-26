@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="170dp"
+    android:id="@+id/lLayout"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/back_round_corners"
+    android:orientation="vertical"
+    android:layout_margin="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/imgMov"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/thor4"
+        />
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        app:layout_constraintTop_toBottomOf="@id/imgMov"
+        android:background="@color/maroon_light"/>
+
+    <TextView
+        android:id="@+id/movName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CAPTAIN AMERICA FIRST AVENGERS"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:lines="2"
+        app:layout_constraintStart_toStartOf="@id/imgMov"
+        app:layout_constraintEnd_toEndOf="@id/imgMov"
+        app:layout_constraintTop_toBottomOf="@id/viewLine"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:layout_marginHorizontal="2dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YEAR"
+        app:layout_constraintTop_toBottomOf="@id/movName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:textColor="@color/light_grey"/>
+    <View
+        android:id="@+id/yearLine"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/year"
+        app:layout_constraintStart_toStartOf="@id/year"
+        app:layout_constraintEnd_toEndOf="@id/year"
+        android:background="@color/light_grey"/>
+
+    <TextView
+        android:id="@+id/releaseYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2022"
+        app:layout_constraintTop_toBottomOf="@id/yearLine"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="10sp"
+        android:textColor="@color/light_grey"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
